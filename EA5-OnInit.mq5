@@ -27,12 +27,12 @@ void OnTick()
       
       if(last>smaArray[0] && PositionsTotal()==0)
          {
-            //Comment("Compra");
+            Comment("Compra");
             trade.Buy(5, _Symbol, ask, ask-5, ask+5, "");
          }
       else if(last<smaArray[0] && PositionsTotal()==0)
          {
-            //Comment("Venda");
+            Comment("Venda");
             trade.Sell(5, _Symbol, bid, bid+5, bid-5, ""); 
          }
    
